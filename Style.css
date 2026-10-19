@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f7fb;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1769aa;
+    color: white;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+h2 {
+    color: #1769aa;
+    font-size: 21px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #eef3f8;
+}
+
+.item {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: lightblue;
+    border: 1px solid #2783b8;
+    border-radius: 6px;
+}
+
+/* Ví dụ 1: flex-basis với px */
+.example-1 {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.basis-200 {
+    flex: 0 0 200px;
+}
+
+.basis-100 {
+    flex: 0 0 100px;
+}
+
+.basis-150 {
+    flex: 0 0 150px;
+}
+
+/* Ví dụ 2: flex-direction: column */
+.example-2 {
+    flex-direction: column;
+    height: 350px;
+    align-items: stretch;
+}
+
+.example-2 .item {
+    flex: 0 0 80px;
+    background-color: lightgreen;
+    border-color: #359447;
+}
+
+/* Ví dụ 3: flex-basis với % */
+.example-3 {
+    gap: 0;
+}
+
+.example-3 .item {
+    flex: 0 0 50%;
+    background-color: lightcoral;
+    border-color: #b84b4b;
+}
+
+/* Ví dụ 4: flex-basis kết hợp flex-grow */
+.example-4 {
+    width: 100%;
+}
+
+.grow-1 {
+    flex: 1 1 100px;
+    background-color: #c8b6f2;
+    border-color: #7855b8;
+}
+
+.grow-2 {
+    flex: 2 1 100px;
+    background-color: #f5d49a;
+    border-color: #b78532;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
